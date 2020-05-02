@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div slass="container">
+{{-- <div slass="container"> --}}
   <header>
     <h1>
       オーデマピゲ ロイヤルオーク
@@ -99,5 +99,5 @@
   <footer>
     copywrite tek-cell 2020
   </footer>
-</div>
+{{-- </div> --}}
 @endsection

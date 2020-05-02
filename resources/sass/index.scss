@@ -12,7 +12,7 @@ header{
   background: #b1afaf;
 
   h1{
-    font-size: 2.3rem;
+    font-size: 2rem;
     color: #fff;
     padding: 1rem 0;
     margin-bottom: 0.2rem;
@@ -38,24 +38,31 @@ main{
     margin: 1rem auto;
   }
 
-  .photo_menu1,
-  .photo_menu2
-  {
-    background: #b1afaf;
-    height: 160px;
-    text-align: center;
-    padding: 15px;
-    margin-bottom: 1rem;
-    img{
-      height: 130px;
+  .photo_menu{
 
+    .photo_menu1,
+    .photo_menu2
+    {
+      background: #b1afaf;
+      height: 140px;
+      width: 80%;
+      text-align: center;
+      padding: 15px;
+      margin: 1rem auto 1rem;
+      img{
+        height: 140px;
+        
+      }
     }
   }
 
   article{
-    margin-bottom: 20px;
-    border-bottom: solid 1px #ccc;
 
+    section{
+      margin-bottom: 20px;
+      border-bottom: solid 1px #ccc;
+    }
+      
   }
 }
 footer{
@@ -82,6 +89,14 @@ nav{
 }
 main{
 
+  .photo_menu{
+
+    .photo_menu1,
+    .photo_menu2{
+      width: 35%;
+    }
+  }
+
   aside{
     display: flex;
     justify-content: space-evenly;
@@ -92,5 +107,27 @@ main{
 
 // PC用
 @media screen and (min-width: 960px){
+
+  .contents{
+    display: flex;
+    justify-content: space-around;
+  }
   
+  main{
+
+    .photo_menu{
+      display: block;
+      // justify-content: space-evenly;
+        
+        .photo_menu1,
+        .photo_menu2{
+          width: 100%;
+        }
+    }
+
+    article{
+      width: 50%;
+      margin-top: 1rem;
+    }
+  }
 }

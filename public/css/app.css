@@ -150,108 +150,47 @@ legend {
 }
 
 body {
+  width: 100%;
   background: #fff;
-  font-size: 0.9rem;
-  width: 100%;
-  line-height: 1.5rem;
 }
 
-header {
-  text-align: center;
-  margin-bottom: 5%;
-  background: #b1afaf;
-}
-
-header h1 {
-  font-size: 2rem;
-  color: #fff;
-  padding: 1rem 0;
-  margin-bottom: 0.2rem;
-}
-
-nav {
-  background: #000;
-}
-
-nav li {
-  padding: 0.5rem 0;
+.grid__header {
+  height: 30px;
   text-align: center;
   color: #fff;
-  border-bottom: solid 1px #fff;
-}
-
-main .contents {
-  width: 80%;
-  margin: 1rem auto;
-}
-
-main .photo_menu .photo_menu1,
-main .photo_menu .photo_menu2 {
   background: #b1afaf;
-  height: 140px;
-  width: 80%;
-  text-align: center;
-  padding: 15px;
-  margin: 1rem auto 1rem;
-}
-
-main .photo_menu .photo_menu1 img,
-main .photo_menu .photo_menu2 img {
-  height: 140px;
-}
-
-main article section {
+  padding-top: 7px;
   margin-bottom: 20px;
-  border-bottom: solid 1px #ccc;
 }
 
-footer {
+.grid__main {
+  width: 83%;
+  margin: 0 auto;
+  line-height: 1.3rem;
+}
+
+.grid__main .grid__main--photo_menu section {
+  height: 150px;
   text-align: center;
+  padding-top: 15px;
+  background: #b1afaf;
+  margin-bottom: 20px;
+}
+
+.grid__main .grid__main--photo_menu section img {
+  height: 130px;
+}
+
+.grid__main .grid__article section {
+  padding-bottom: 1rem;
+  border-bottom: solid 1px #ccc;
+  margin-bottom: 20px;
+}
+
+.grid__fooder {
   width: 100%;
   color: #fff;
+  text-align: center;
   background: #000;
-}
-
-@media screen and (min-width: 768px) {
-  nav ul {
-    display: flex;
-  }
-
-  nav li {
-    padding: 0.5rem 10px;
-    border-right: solid 1px #fff;
-    border-bottom: none;
-  }
-
-  main .photo_menu .photo_menu1,
-  main .photo_menu .photo_menu2 {
-    width: 35%;
-  }
-
-  main aside {
-    display: flex;
-    justify-content: space-evenly;
-  }
-}
-
-@media screen and (min-width: 960px) {
-  .contents {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  main .photo_menu {
-    display: block;
-  }
-
-  main .photo_menu .photo_menu1,
-  main .photo_menu .photo_menu2 {
-    width: 100%;
-  }
-
-  main article {
-    width: 50%;
-    margin-top: 1rem;
-  }
 }
 

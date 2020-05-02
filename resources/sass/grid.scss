@@ -1,0 +1,51 @@
+body{
+  width: 100%;
+  background: #fff;
+}
+
+.grid__header{
+  height: 30px;
+  text-align: center;
+  color: #fff;
+  background: #b1afaf;
+  padding-top: 7px;
+  margin-bottom: 20px;
+}
+
+.grid__main{
+  width: 83%;
+  margin: 0 auto;
+  line-height: 1.3rem;
+
+  .grid__main--photo_menu{
+
+    section{
+      height: 150px;
+      text-align: center;
+      padding-top: 15px;
+      background: #b1afaf;
+      margin-bottom: 20px;
+
+      img{
+        height: 130px;
+      }
+    }
+  }
+
+  .grid__article{
+
+    section{
+      padding-bottom: 1rem;
+      border-bottom: solid 1px #ccc;
+      margin-bottom: 20px;
+
+    }
+  }
+}
+
+.grid__fooder{
+      width: 100%;
+      color: #fff;
+      text-align: center;
+      background: #000;
+}

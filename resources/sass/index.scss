@@ -1,0 +1,96 @@
+// スマートフォン用
+body{
+  background: #fff;
+  font-size: 0.9rem;
+  width: 100%;
+  line-height: 1.5rem;
+}
+
+header{
+  text-align: center;
+  margin-bottom: 5%;
+  background: #b1afaf;
+
+  h1{
+    font-size: 2.3rem;
+    color: #fff;
+    padding: 1rem 0;
+    margin-bottom: 0.2rem;
+    }
+
+}
+
+nav{
+  background: #000;
+  
+  li{
+    padding: 0.5rem 0;
+    text-align: center;
+    color: #fff;
+    border-bottom: solid 1px #fff;
+  }
+}
+
+main{
+
+  .contents{
+    width: 80%;
+    margin: 1rem auto;
+  }
+
+  .photo_menu1,
+  .photo_menu2
+  {
+    background: #b1afaf;
+    height: 160px;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 1rem;
+    img{
+      height: 130px;
+
+    }
+  }
+
+  article{
+    margin-bottom: 20px;
+    border-bottom: solid 1px #ccc;
+
+  }
+}
+footer{
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  background: #000;
+}
+
+// タブレット用
+@media screen and (min-width: 768px){
+nav{
+
+  ul{
+    display: flex;
+  }
+
+  li{
+    padding: 0.5rem 10px;
+    border-right: solid 1px #fff;
+    border-bottom: none;
+    
+  }
+}
+main{
+
+  aside{
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+}
+
+// PC用
+@media screen and (min-width: 960px){
+  
+}

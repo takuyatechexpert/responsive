@@ -170,15 +170,16 @@ body {
 }
 
 .grid__main .grid__main--photo_menu section {
-  height: 150px;
+  height: 100%;
   text-align: center;
-  padding-top: 15px;
+  padding: 15px;
   background: #b1afaf;
   margin-bottom: 20px;
 }
 
 .grid__main .grid__main--photo_menu section img {
-  height: 130px;
+  width: 300px;
+  max-width: 100%;
 }
 
 .grid__main .grid__article section {

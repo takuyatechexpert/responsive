@@ -1,8 +1,238 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);.text {
-  width: 100vw;
-  height: 100vh;
-  line-height: 100vh;
+@import url(https://fonts.googleapis.com/css?family=Nunito);/*!
+ * YUI 3.5.0 - reset.css (http://developer.yahoo.com/yui/3/cssreset/)
+ * http://cssreset.com
+ * Copyright 2012 Yahoo! Inc. All rights reserved.
+ * http://yuilibrary.com/license/
+ */
+
+/*
+    TODO will need to remove settings on HTML since we can't namespace it.
+    TODO with the prefix, should I group by selector or property for weight savings?
+*/
+
+html {
+  color: #000;
+  background: #FFF;
+}
+
+/*
+  TODO remove settings on BODY since we can't namespace it.
+*/
+
+/*
+  TODO test putting a class on HEAD.
+      - Fails on FF.
+*/
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img {
+  border: 0;
+}
+
+/*
+  TODO think about hanlding inheritence differently, maybe letting IE6 fail a bit...
+*/
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+q:before,
+q:after {
+  content: "";
+}
+
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+
+/* to preserve line-height and selector appearance */
+
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*to enable resizing for IE*/
+
+input,
+textarea,
+select {
+  *font-size: 100%;
+}
+
+/*because legend doesn't inherit in IE */
+
+legend {
+  color: #000;
+}
+
+/* YUI CSS Detection Stamp */
+
+#yui3-css-stamp.cssreset {
+  display: none;
+}
+
+body {
+  background: #fff;
+  font-size: 0.9rem;
+  width: 100%;
+  line-height: 1.5rem;
+}
+
+header {
   text-align: center;
-  color: red;
+  margin-bottom: 5%;
+  background: #b1afaf;
+}
+
+header h1 {
+  font-size: 2.3rem;
+  color: #fff;
+  padding: 1rem 0;
+  margin-bottom: 0.2rem;
+}
+
+nav {
+  background: #000;
+}
+
+nav li {
+  padding: 0.5rem 0;
+  text-align: center;
+  color: #fff;
+  border-bottom: solid 1px #fff;
+}
+
+main .contents {
+  width: 80%;
+  margin: 1rem auto;
+}
+
+main .photo_menu1,
+main .photo_menu2 {
+  background: #b1afaf;
+  height: 160px;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 1rem;
+}
+
+main .photo_menu1 img,
+main .photo_menu2 img {
+  height: 130px;
+}
+
+main article {
+  margin-bottom: 20px;
+  border-bottom: solid 1px #ccc;
+}
+
+footer {
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  background: #000;
+}
+
+@media screen and (min-width: 768px) {
+  nav ul {
+    display: flex;
+  }
+
+  nav li {
+    padding: 0.5rem 10px;
+    border-right: solid 1px #fff;
+    border-bottom: none;
+  }
+
+  main aside {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
 }
 
